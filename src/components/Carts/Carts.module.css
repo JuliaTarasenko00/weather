@@ -1,5 +1,9 @@
 @import '../../styles/variables.css';
 
+.carts_wether_section {
+  padding-bottom: 153px;
+}
+
 .carts_wether_list {
   list-style: var(--list-style);
   display: flex;

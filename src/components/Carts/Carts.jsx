@@ -69,7 +69,7 @@ const Carts = () => {
     },
   ];
   return (
-    <section>
+    <section className={css.carts_wether_section}>
       <ul className={css.carts_wether_list}>
         {items.map(({ day, number, weather, degrees, lowerDegree, info }) => {
           return (
