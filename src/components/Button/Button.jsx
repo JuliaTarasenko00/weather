@@ -13,7 +13,7 @@ const Button = () => {
           Month
         </button>
       </div>
-      <button className={css.button}>Cancel</button>
+      <button className={css.button}>Cancel </button>
     </section>
   );
 };
