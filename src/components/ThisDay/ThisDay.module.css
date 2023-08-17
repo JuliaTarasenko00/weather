@@ -1,0 +1,49 @@
+@import '../../styles/variables.css';
+
+.this_day {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white-background);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.this_day_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 31px;
+}
+
+.this_day_temperature {
+  color: var(--color);
+  font-size: 96px;
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+.this_day_title {
+  color: var(--white-color);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.this_day_list {
+  list-style: var(--list-style);
+}
+
+.this_day_item {
+  color: var(--text-color);
+  font-size: 25px;
+}
+
+.this_day_item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.this_day_svg svg {
+  width: 119px;
+  height: 119px;
+}

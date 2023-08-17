@@ -1,0 +1,9 @@
+:root {
+  --white-background: #fff;
+  --box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  --list-style: none;
+  --color: #4793ff;
+  --white-color: #000;
+  --text-color: #939cb0;
+  --background-carts: rgba(71, 147, 255, 0.2);
+}

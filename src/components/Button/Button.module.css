@@ -1,0 +1,28 @@
+.button_section {
+  margin-top: 50px;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  cursor: pointer;
+  border: transparent;
+  color: var(--white-color);
+  border-radius: 5px;
+  padding: 7px 20px;
+  background-color: var(--white-background);
+  box-shadow: var(--box-shadow);
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: white;
+  background-color: var(--color);
+}

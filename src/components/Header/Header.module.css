@@ -1,0 +1,21 @@
+@import '../../styles/variables.css';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  color: var(--color);
+  font-size: 25px;
+  line-height: normal;
+  text-transform: uppercase;
+}
