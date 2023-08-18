@@ -1,0 +1,7 @@
+.search_city {
+  border: 'none';
+  border-radius: 10;
+  background-color: rgba(71, 147, 255, 0.2);
+  width: 194;
+  height: 37;
+}
