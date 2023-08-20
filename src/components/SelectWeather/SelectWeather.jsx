@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { weatherFetch } from 'redux/options';
+import { useDispatch } from 'react-redux';
+
+import { weatherFetch, weatherFetchWeek } from 'redux/options';
 
 const SelectWeather = () => {
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState('Odessa');
   const dispatch = useDispatch();
-  const error = useSelector(state => state.weather.error);
 
   const changeCityName = ev => {
     ev.preventDefault();
@@ -20,13 +18,9 @@ const SelectWeather = () => {
 
   useEffect(() => {
     if (!city) return;
-
-    if (error) {
-      toast.error(`${city} city not found, please check and try again.`);
-      return;
-    }
     dispatch(weatherFetch(city));
-  }, [dispatch, city, error]);
+    dispatch(weatherFetchWeek(city));
+  }, [dispatch, city]);
 
   return (
     <>
@@ -34,18 +28,6 @@ const SelectWeather = () => {
         <input type="text" name="city" required />
         <button type="submit">Submit</button>
       </form>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-      />
     </>
   );
 };

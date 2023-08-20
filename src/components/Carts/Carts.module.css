@@ -1,6 +1,7 @@
 @import '../../styles/variables.css';
 
 .carts_wether_section {
+  padding-top: 50px;
   padding-bottom: 153px;
 }
 

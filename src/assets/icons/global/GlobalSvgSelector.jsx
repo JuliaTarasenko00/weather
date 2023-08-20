@@ -58,7 +58,7 @@ export const GlobalSvgSelector = ({ id }) => {
           />
         </svg>
       );
-    case 'sun':
+    case 'Clear':
       return (
         <svg
           width="48"
@@ -90,7 +90,7 @@ export const GlobalSvgSelector = ({ id }) => {
           </defs>
         </svg>
       );
-    case 'rain':
+    case 'Rain':
       return (
         <svg
           width="48"
@@ -250,7 +250,7 @@ export const GlobalSvgSelector = ({ id }) => {
           </defs>
         </svg>
       );
-    case 'cloudy':
+    case 'Clouds':
       return (
         <svg
           width="48"
