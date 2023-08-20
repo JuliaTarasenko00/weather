@@ -19,3 +19,9 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+.button_topic {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

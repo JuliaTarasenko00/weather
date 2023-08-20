@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-
 import { weatherFetch, weatherFetchWeek } from 'redux/options';
+import css from './SelextWeather.module.css';
 
 const SelectWeather = () => {
   const [city, setCity] = useState('Odessa');
@@ -24,9 +24,11 @@ const SelectWeather = () => {
 
   return (
     <>
-      <form onSubmit={changeCityName}>
-        <input type="text" name="city" required />
-        <button type="submit">Submit</button>
+      <form onSubmit={changeCityName} className={css.select_form}>
+        <input type="text" name="city" required className={css.search_city} />
+        <button type="submit" className={css.btn}>
+          🔍
+        </button>
       </form>
     </>
   );

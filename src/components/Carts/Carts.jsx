@@ -58,10 +58,10 @@ const Carts = () => {
               <p className={css.carts_wether_number}>{date(dt_txt)}</p>
               <GlobalSvgSelector id={clarity(weather)} />
               <p className={css.carts_wether_degrees}>
-                {Math.round(main.temp_max)}
+                {Math.round(main.temp_max)}°
               </p>
               <p className={css.carts_wether_lower}>
-                {Math.round(main.temp_min)}
+                {Math.round(main.temp_min)}°
               </p>
               <p className={css.carts_wether_info}>{clarity(weather)}</p>
             </li>

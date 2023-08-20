@@ -10,7 +10,9 @@ const Header = () => {
         <h1 className={css.title}>React weather</h1>
       </div>
       <div className={css.wrapper}>
-        <GlobalSvgSelector id="change-theme" />
+        <button className={css.button_topic}>
+          <GlobalSvgSelector id="change-theme" />
+        </button>
         <SelectWeather />
       </div>
     </section>

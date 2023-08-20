@@ -27,7 +27,7 @@ const ThisDay = () => {
       <div className={css.this_day_wrapper}>
         <div className={css.this_day_info}>
           <p className={css.this_day_temperature}>
-            {Math.round(dayWeather.main?.temp)}
+            {Math.round(dayWeather.main?.temp)}°
           </p>
           <h2 className={css.this_day_title}>Today</h2>
         </div>
