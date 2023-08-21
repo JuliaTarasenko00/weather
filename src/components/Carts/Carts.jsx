@@ -9,7 +9,7 @@ const Carts = () => {
   const dayWeek = dt => {
     const todayDate = new Date();
     const dayFromBack = new Date(dt * 1000);
-    const today = ['Today'];
+    const today = 'Today';
     const dayWeek = [
       'Monday',
       'Tuesday',
@@ -19,8 +19,9 @@ const Carts = () => {
       'Saturday',
       'Sunday',
     ];
+    console.log(todayDate.getUTCDay() === dayFromBack.getUTCDay());
     return todayDate.getUTCDay() === dayFromBack.getUTCDay()
-      ? today[dayFromBack.getUTCDay()]
+      ? today
       : dayWeek[dayFromBack.getUTCDay()];
   };
 
