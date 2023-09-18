@@ -1,12 +1,26 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
-export const ThemeContext = createContext({ type: 'Light' });
+const KEY = 'theme';
+
+const ThemeContext = createContext();
+export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-  const [type, setType] = useState('Light');
+  const [isDark, setIsDark] = useState(
+    () => JSON.parse(window.localStorage.getItem(KEY)) ?? false
+  );
+
+  useEffect(() => {
+    if (isDark) {
+      document.body.setAttribute('dark', '');
+    } else {
+      document.body.removeAttribute('dark');
+    }
+    window.localStorage.setItem(KEY, JSON.stringify(isDark));
+  }, [isDark]);
 
   return (
-    <ThemeContext.Provider value={{ type, setType }}>
+    <ThemeContext.Provider value={{ setIsDark }}>
       {children}
     </ThemeContext.Provider>
   );

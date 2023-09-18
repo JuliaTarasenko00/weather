@@ -4,7 +4,7 @@
   width: 100%;
   padding: 42px 0 39px 32px;
   border-radius: 20px;
-  background-color: var(--white-background);
+  background-color: var(--background-cart);
   box-shadow: var(--box-shadow);
 }
 .day_details_img {
@@ -35,10 +35,10 @@
 }
 
 .day_details_title {
-  color: var(--text-color);
+  color: var(--text-color-cart);
   font-size: 14px;
 }
 .day_details_text {
-  color: var(--white-color);
+  color: var(--text-color);
   font-size: 14px;
 }

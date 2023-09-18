@@ -19,7 +19,7 @@ const Carts = () => {
       'Saturday',
       'Sunday',
     ];
-    console.log(todayDate.getUTCDay() === dayFromBack.getUTCDay());
+  
     return todayDate.getUTCDay() === dayFromBack.getUTCDay()
       ? today
       : dayWeek[dayFromBack.getUTCDay()];
@@ -35,7 +35,7 @@ const Carts = () => {
       'Feb',
       'Mar',
       'Apr',
-      ' May',
+      'May',
       'June',
       'July',
       'Aug',

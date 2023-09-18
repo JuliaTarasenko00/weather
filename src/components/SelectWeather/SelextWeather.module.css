@@ -10,6 +10,7 @@
   border-radius: 10px;
   background-color: rgba(71, 147, 255, 0.2);
   outline: none;
+  color: var(--text-color);
 }
 
 .btn {
